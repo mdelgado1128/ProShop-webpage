@@ -98,7 +98,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     res.json({
       _id: updateUser._id,
       name: updateUser.name,
-      email: updateUser.emal,
+      email: updateUser.email,
       isAdmin: updateUser.isAdmin,
       token: generateToken(updateUser._id),
     })

@@ -12,7 +12,10 @@ import {
   USER_UPDATE_PROFILE_FAIL,
   USER_UPDATE_PROFILE_REQUEST,
   USER_UPDATE_PROFILE_SUCCESS,
+  USER_DETAILS_RESET,
 } from "../constants/userConstants.js"
+
+import { ORDER_LIST_MY_RESET } from "../constants/orderConstants.js"
 
 export const login = (email, password) => async (dispatch) => {
   try {
@@ -160,4 +163,6 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
 export const logout = () => (dipatch) => {
   localStorage.removeItem("userInfo")
   dipatch({ type: "USER_LOGOUT" })
+  dipatch({ type: "USER_DETAILS_RESET" })
+  dipatch({ type: "ORDER_LIST_MY_RESET" })
 }

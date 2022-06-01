@@ -22,3 +22,5 @@ Proshop uses React and redux for the frontend and node and mongoDB for the backe
 ![placeorderScreen](./frontend/public/images/placeOrderScreen.png)
 ![orderScreen](./frontend/public/images/orderScreen.png)
 ![userScreen](./frontend/public/images/myorders.png)
+
+/home/mark/Desktop/programing/ProShop-webpage/backend/server.js

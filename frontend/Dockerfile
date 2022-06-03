@@ -1,6 +1,9 @@
 FROM node:16-alpine3.12
 
-WORKDIR /code
+RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/frontend
+
+WORKDIR /usr/src/app/frontend
 
 
 COPY package.json package.json

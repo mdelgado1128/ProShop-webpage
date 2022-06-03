@@ -1,0 +1,14 @@
+version: "3"
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - 5000:5000
+    restart: always
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    stdin_open: true
+    ports:
+      - 3000:3000
